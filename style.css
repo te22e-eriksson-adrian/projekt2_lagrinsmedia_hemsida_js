@@ -30,13 +30,16 @@ nav{
 article, .varukorg{
     background-color: #d9d9d9;
 }
-article{
+.varukorg{
+    text-align: center;
+}
+article, .varukorg{
     margin-top: 15%;
     margin-bottom: 15%;
     width: 230px;
     height: 300px;
 }
-article > p, h3{
+article > p{
     margin-left: 12.5px;
 }
 img{
@@ -47,6 +50,7 @@ img{
 }
 footer{
     height: 230px;
+    padding-bottom: 10px;
 }
 footer > p{
     padding-left: 35px;
@@ -58,4 +62,63 @@ a:hover{
 }
 a:active{
     background-color: yellow;
+}
+
+/* Tablet layout om bredden är mellan 641px och 1007px */
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    body{
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 0.25fr;
+        grid-template-rows: 0.25fr 50px 05fr 0.25fr;
+    }
+    header{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 40px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+    }
+    a{
+        height: 15px;
+    }
+    main{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    article, .varukorg{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .varor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .varukorg{
+        width: 100%;
+    }
+    footer{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        height: 175px;
+        padding-top: 20px;
+    }
+}
+
+/* Dator layout om bredden är minst 1008px */
+@media screen and (min-width: 1008px){
+    
 }
