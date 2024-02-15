@@ -22,7 +22,6 @@ nav, footer, a{
     text-align: center;
     background-color: #18578f;
     color: #FFFFFF;
-    text-decoration: none;
 }
 nav{
     padding-top: 4px;
@@ -55,10 +54,6 @@ footer{
 footer > p{
     padding-left: 35px;
     padding-right: 35px;
-}
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: #FFFFFF;
 }
 a:active{
     background-color: yellow;
@@ -144,6 +139,7 @@ a:active{
     }
     a{
         height: 15px;
+        text-decoration: none;
     }
     main{
         grid-column: 2/3;
@@ -168,6 +164,10 @@ a:active{
         width: 475px;
         height: 625px;
         margin-left: 5px;
+    }
+    a:hover{
+        text-decoration: underline;
+        text-decoration-color: #FFFFFF;
     }
     footer{
         grid-column: 1/4;
