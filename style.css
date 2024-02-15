@@ -120,5 +120,59 @@ a:active{
 
 /* Dator layout om bredden är minst 1008px */
 @media screen and (min-width: 1008px){
-    
+    body{
+        display: grid;
+        grid-template-columns: 0.15fr 1fr 0.15fr;
+        grid-template-rows: 0.3fr 50px 1fr 0.3fr;
+    }
+    header{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 40px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+    }
+    a{
+        height: 15px;
+    }
+    main{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    article, .varukorg{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .varor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .varukorg{
+        width: 475px;
+        height: 625px;
+        margin-left: 5px;
+    }
+    footer{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        height: 175px;
+        padding-top: 20px;
+    }
 }
