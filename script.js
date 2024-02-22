@@ -1,16 +1,19 @@
 //const vara = document.querySelector("#vara");
 //const pris = document.querySelector("#pris");
 let container = document.querySelector(".inre_varukorg");
+let summa = document.querySelector("#summa");
 
 let array=[];
 const nyckel = "artiklar";
 
-function add(vara, pris_p){
+let total_summa = 0;
+
+function add(vara, pris_p, pris_siffra){
     let artikel = {
         rubrik:vara ,
-        pris:pris_p
+        pris:pris_p ,
+        kostnad:pris_siffra
     }
-    
     array.push(artikel);
     console.log(array);
     let json = JSON.stringify(array);
@@ -23,11 +26,13 @@ function rita_artiklar(){
     for (let i = 0; i < array.length; i++) {
         let vara_p = document.createElement("p");
         let pris_p = document.createElement("p");
-        container.classList.add("minKlass");
-        vara_p.textContent =array[i].rubrik;
-        pris_p.textContent =array[i].pris;
+        container.classList.add("container");
+        vara_p.textContent = array[i].rubrik;
+        pris_p.textContent = array[i].pris;
+        total_summa = total_summa + array[i].kostnad;
         container.appendChild(vara_p);
         container.appendChild(pris_p);
+        summa.textContent = total_summa;
     }
 }
 
