@@ -1,5 +1,3 @@
-//const vara = document.querySelector("#vara");
-//const pris = document.querySelector("#pris");
 let container = document.querySelector(".inre_varukorg");
 let summa = document.querySelector("#summa");
 
@@ -29,11 +27,12 @@ function rita_artiklar(){
         container.classList.add("container");
         vara_p.textContent = array[i].rubrik;
         pris_p.textContent = array[i].pris;
-        total_summa = total_summa + array[i].kostnad;
+        total_summa += array[i].kostnad;
         container.appendChild(vara_p);
         container.appendChild(pris_p);
         summa.textContent = total_summa;
     }
+    total_summa = 0;
 }
 
 /*
