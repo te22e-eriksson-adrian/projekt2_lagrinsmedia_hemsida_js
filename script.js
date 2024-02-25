@@ -2,7 +2,7 @@ let container = document.querySelector(".inre_varukorg");
 let summa = document.querySelector("#summa");
 
 let array=[];
-const nyckel = "artiklar";
+const nyckel_2 = "artiklar";
 
 let total_summa = 0;
 
@@ -35,10 +35,8 @@ function rita_artiklar(){
     total_summa = 0;
 }
 
-/*
 function read_from_ls(){
-    let json = window.localStorage.getItem("nyckel");
+    let json = window.localStorage.getItem("nyckel_2");
     array = JSON.parse("json");
     console.log("get_local:\n",array);
 }
-*/
