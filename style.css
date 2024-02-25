@@ -58,6 +58,9 @@ footer > p{
 a:active{
     background-color: yellow;
 }
+.summa_text, #summa, .summa_valuta{
+    text-decoration: underline;
+}
 
 /* Tablet layout om bredden är mellan 641px och 1007px */
 @media screen and (min-width: 641px) and (max-width: 1007px){
