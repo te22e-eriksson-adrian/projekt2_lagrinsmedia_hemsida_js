@@ -36,9 +36,9 @@ article, .varukorg{
     margin-top: 15%;
     margin-bottom: 15%;
     width: 230px;
-    height: 300px;
+    height: 335px;
 }
-article > p{
+article > p, button{
     margin-left: 12.5px;
 }
 img{
@@ -165,7 +165,7 @@ a:active{
     }
     .varukorg{
         width: 475px;
-        height: 625px;
+        height: 695px;
         margin-left: 5px;
     }
     a:hover{
