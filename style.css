@@ -58,7 +58,7 @@ footer > p{
 a:active{
     background-color: yellow;
 }
-.summa_text, #summa, .summa_valuta{
+.summa_text, #summa{
     text-decoration: underline;
 }
 

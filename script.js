@@ -30,7 +30,7 @@ function rita_artiklar(){
         total_summa += array[i].kostnad;
         container.appendChild(vara_p);
         container.appendChild(pris_p);
-        summa.textContent = total_summa;
+        summa.textContent = total_summa + " EUR";
     }
     total_summa = 0;
 }
