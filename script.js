@@ -15,8 +15,9 @@ function add(vara, pris_p, pris_siffra){
     array.push(artikel);
     console.log(array);
     let json = JSON.stringify(array);
-    window.localStorage.setItem(nyckel, json);
+    window.localStorage.setItem(nyckel_2, json);
     rita_artiklar();
+    read_from_ls();
 }
 
 function rita_artiklar(){
