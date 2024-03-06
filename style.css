@@ -16,6 +16,15 @@ header{
 h1{
     font-size: calc(1.75rem + 2vw);
 }
+input{
+    outline: none;
+    border: none;
+}
+label{
+    font-size: 0.9rem;
+    color: #18578f;
+    background-color: white;
+}
 nav, footer, a{
     display: flex;
     flex-direction: column;
