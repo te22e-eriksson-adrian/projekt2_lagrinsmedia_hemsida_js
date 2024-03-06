@@ -61,6 +61,9 @@ a:active{
 .summa_text, #summa{
     text-decoration: underline;
 }
+.rensa{
+    margin-left: 0px;
+}
 
 /* Tablet layout om bredden är mellan 641px och 1007px */
 @media screen and (min-width: 641px) and (max-width: 1007px){

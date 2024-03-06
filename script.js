@@ -41,3 +41,9 @@ function read_from_ls(){
     array = JSON.parse("json");
     console.log("get_local:\n",array);
 }
+
+function erase(){
+    array=[];
+    container.innerHTML="";
+    summa.textContent = 0 + " EUR";
+}
